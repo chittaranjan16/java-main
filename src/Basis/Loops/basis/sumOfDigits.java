@@ -1,4 +1,4 @@
-package Loops.basis;
+package Basis.Loops.basis;
 
 public class sumOfDigits {
     static void main(String[] args) {

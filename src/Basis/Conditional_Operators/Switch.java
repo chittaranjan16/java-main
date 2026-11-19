@@ -1,4 +1,4 @@
-package Conditional_Operators;
+package Basis.Conditional_Operators;
 
 import java.util.Scanner;
 

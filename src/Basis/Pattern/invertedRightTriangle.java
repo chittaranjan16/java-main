@@ -1,4 +1,4 @@
-package Pattern;
+package Basis.Pattern;
 
 public class invertedRightTriangle {
 

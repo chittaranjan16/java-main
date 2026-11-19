@@ -1,4 +1,4 @@
-package Conditional_Operators;
+package Basis.Conditional_Operators;
 
 public class conditionalOp {
 

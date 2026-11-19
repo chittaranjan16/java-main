@@ -1,4 +1,4 @@
-package Loops.NumProblem;
+package Basis.Loops.NumProblem;
 
 public class binary2Decimal {
     void binaryToDeci(int binaryNum){

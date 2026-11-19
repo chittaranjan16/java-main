@@ -1,6 +1,6 @@
-package Loops.basis;
+package Basis.Loops.basis;
 
-public class reverseNUMBER {
+public class reverseNUMBERS {
 
     public static void main(String[] args) {
         int num = 123;

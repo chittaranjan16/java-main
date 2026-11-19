@@ -1,4 +1,4 @@
-package Recursion;
+package Basis.Recursion;
 
 
 //Sum of numbers from 1 to N

@@ -1,4 +1,4 @@
-package Recursion;
+package Basis.Recursion;
 
 
 //Program 3 — Factorial of a number

@@ -1,4 +1,4 @@
-package Loops.basis;
+package Basis.Loops.basis;
 
 public class sumOfnum {
     static void main(String[] args) {

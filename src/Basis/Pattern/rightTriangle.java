@@ -1,4 +1,4 @@
-package Pattern;
+package Basis.Pattern;
 
 public class rightTriangle {
     public static void main(String[] args) {

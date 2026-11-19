@@ -1,4 +1,4 @@
-package Recursion;
+package Basis.Recursion;
 
 public class sumDigitsR {
     static int sumDigit(int n){

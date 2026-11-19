@@ -1,4 +1,4 @@
-package Loops.NumProblemRange;
+package Basis.Loops.NumProblemRange;
 
 public class prime {
 

@@ -1,4 +1,4 @@
-package Loops.NumProblem;
+package Basis.Loops.NumProblem;
 
 import java.util.Scanner;
 
