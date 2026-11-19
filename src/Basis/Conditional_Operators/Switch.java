@@ -6,6 +6,7 @@ public class Switch {
 
     static void main(String[] args){
 
+        System.out.print("enter day number : ");
         Scanner sc = new Scanner(System.in);
 
         int day = sc.nextInt();
