@@ -101,8 +101,8 @@ public class Test1 {
 //        hs.remove(7);
 //        hs.remove(10);
 //        hs.remove(38);
-//        hs.add(58);
-//        hs.add(98);
+//        hs.addLast(58);
+//        hs.addLast(98);
 //        hs.remove(58);
         hs.display();
 //        System.out.println(hs.contains(98));

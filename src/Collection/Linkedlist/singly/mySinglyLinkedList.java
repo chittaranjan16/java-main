@@ -15,7 +15,7 @@ public class mySinglyLinkedList {
     Node head;
     int count;
 
-    //to add element
+    //to addLast element
     public void add(Object ele){
         if(head==null){
             addFirst(ele);
@@ -42,7 +42,7 @@ public class mySinglyLinkedList {
     }
 
 
-    // add at particular index
+    // addLast at particular index
     public void add(int in, Object ele){
         if(in < 0 || in >= size()){
             throw new IndexOutOfBoundsException();
@@ -133,7 +133,7 @@ class Test{
         list.add(30);
         list.add(40);
 
-        list.add(2,"add value");
+        list.add(2,"addLast value");
         list.set(2,"new value");
 
         list.remove(list.size()-1);

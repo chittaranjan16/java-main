@@ -45,7 +45,7 @@ public class stackLL {
             curr = curr.next;
         }
 
-        Object temp = curr.data;
+        Object temp = curr.next.data;
         curr.next = null;
         count--;
 
@@ -54,6 +54,10 @@ public class stackLL {
 
     // return last element
     public Object peek(){
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty");
+        }
+
         Node curr = head;
         while (curr.next != null){
             curr = curr.next;
@@ -103,6 +107,9 @@ class test1{
         stack.push(20);
         stack.push(30);
         stack.push(40);
+        stack.display();
+
+        System.out.println();
 
         System.out.println("pop element : " + stack.pop());
 
