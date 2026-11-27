@@ -1,0 +1,19 @@
+collection
+> it is a interface
+> it it a group of multiple individual object form together into a single entity.
+> it predefined classes and methods
+> used to perform CRUD operations.
+> it is available in java.util
+
+
+Collection Framework
+> it a mechanism that contains predefined classse & methods that can be used to perform CRUD operations
+
+collection contains 3 sub interfaces
+1. list
+2. set
+3. queue
+
+
+
+

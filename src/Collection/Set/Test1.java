@@ -10,12 +10,15 @@ class Node {
     }
 }
 
+
 class HashSet {
     Node[] arr = new Node[10];
     int count = 0;
 
-    public boolean add(int key) {
+    public boolean add(int key)
+    {
         int index = key % 10;
+
         if (arr[index] == null) {
             arr[index] = new Node(key, null);
             count++;
@@ -34,7 +37,6 @@ class HashSet {
 
     public int size() {
         return count;
-
     }
 
     public void display() {
@@ -45,7 +47,6 @@ class HashSet {
                 System.out.println(curr.data);
                 curr = curr.next;
             }
-
         }
     }
     public void remove(int key)
@@ -74,6 +75,7 @@ class HashSet {
             curr=curr.next;
         }
     }
+
     public boolean contains(int key)
     {
         for (int i = 0; i < arr.length; i++) {
@@ -84,7 +86,6 @@ class HashSet {
                     return true;
                 curr = curr.next;
             }
-
         }
         return false;
     }
@@ -98,6 +99,7 @@ public class Test1 {
         hs.add(7);
         hs.add(11);
         hs.add(50);
+
 //        hs.remove(7);
 //        hs.remove(10);
 //        hs.remove(38);

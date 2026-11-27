@@ -1,4 +1,6 @@
-package Collection.Linkedlist.Double;
+package Collection.Linkedlist.Doubly;
+
+//  difference between singly and doubly ll is that doubly can [two way - travarsel]
 
 class Node{
     Node prev;
@@ -60,6 +62,10 @@ public class myDoubleLL {
         return count;
     }
 
+    public boolean isEmpty(){
+        return (head==null && tail==null);
+    }
+
     //add element at particular index;
     public void add(Object ele, int in){
         if(in < 0 || in > size()){
@@ -88,6 +94,52 @@ public class myDoubleLL {
     }
 
 
+    //remove from last
+    public Object removeLast(){
+        Object removed = tail.data;
+
+        if(head == tail){
+            head = null;
+            tail=null;
+        }
+        else{
+            tail=tail.prev;
+            tail.next=null;
+        }
+        count--;
+        return removed;
+    }
+
+    // remove from front
+    public Object removeFront(){
+        Object removed = head.data;
+
+        if(head == tail){
+            head = null;
+            tail=null;
+        }
+
+        else {
+            head=head.next;
+            head.prev=null;
+        }
+        count--;
+        return removed;
+    }
+
+
+    //remove from particular index
+    public void remove(int in){
+        Node curr = head;
+        for(int i = 0 ; i<in ; i++ ){
+            curr=curr.next;
+        }
+        curr.prev.next=curr.next;
+        //10.next=30;
+        curr.next.prev=curr.prev;
+        //30.prev=10;
+    }
+
     void display(){
         Node temp = head;
         while (temp != null) {
@@ -97,19 +149,37 @@ public class myDoubleLL {
         }
         System.out.println("Null");
     }
+
+    void displayReverse(){
+        Node temp = tail;
+        while(temp != null) {
+            System.out.print(temp.data + " <-> ");
+            temp = temp.prev;
+        }
+    }
 }
-
-
 
 class test{
     public static void main(String[] args) {
 
         myDoubleLL dll = new myDoubleLL();
-        dll.addLast(10);
-        dll.addLast(20);
+        dll.addLast(30);
+        dll.addLast(40);
         dll.addLast(50);
-        dll.addFront(30);
-        dll.addFront(40);
+
+        dll.addFront(20);
+        dll.addFront(10);
+
+        dll.add(35,3);
+
         dll.display();
+
+        dll.removeLast();
+        dll.remove(1);
+
+        dll.display();
+        System.out.println(dll.isEmpty());
+
+        dll.displayReverse();
     }
 }
